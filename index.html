@@ -8,11 +8,12 @@
 	</head>
 	<body>
 		<div id="page-container">
+            <!-- top left box -->
 			<div id="dashboard">
 				<div id="profile-summary">
 					<div class="content">
 						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<p>Scotty Scott</p>
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -35,13 +36,19 @@
 					</div>
 				</div>
 			</div>
+            
+            
+            
 			<div id="main">
 				<h2>Tweets</h2>
 				<div id="stream">
 
 					<!-- STEP 5: When the user successfully inputs characters and clicks the “Tweet” button, a new tweet should be created and added to the tweet stream in the main column, using the user’s fake profile image in the top left and username/fullname. -->
 					<!-- HINT: jQuery ".prepend" method -->
-					<div class="tweet">
+					
+                    
+                    <!-- tweet box on the right: My BFF -->
+                    <div class="tweet">
 						<div class="content">
 							<img class="avatar" src="img/damenleeturks.jpg" />
 							<strong class="fullname">My BFF</strong>
@@ -96,6 +103,8 @@
 						</div>
 					</div><!-- .tweet -->
 
+
+                    <!-- The Onion -->
 					<div class="tweet">
 						<div class="content">
 							<img class="avatar" src="img/funwatercat.jpg" />
@@ -135,7 +144,9 @@
 							</div>
 						</div>
 					</div><!-- .tweet -->
-
+                    
+                    
+                    <!-- Harvard Biz Review -->
 					<div class="tweet">
 						<div class="content">
 							<img class="avatar" src="img/jennyshen.jpg" />
@@ -178,5 +189,9 @@
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
-	</body>
+	   
+       
+        <script src="js/jquery-2.0.3.min.js"></script>
+        <script src="js/animations.js"></script>
+    </body>
 </html>

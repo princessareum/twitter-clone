@@ -48,6 +48,7 @@ body {
 	border: 1px solid #019ad2;
 	cursor: pointer;
 	border-radius: 4px;
+    display: none;
 }
 .button:disabled {
 	color: #777;
@@ -130,14 +131,17 @@ body {
 		#tweet-controls {
 			text-align: right;
 		}
-			#tweet-controls div {
+			#tweet-controls div{
 				display: inline-block;
+                display: none;
 			}
 			#char-count {
+                
 				font-size: 14px;
 				color: #999;
 				text-shadow: 0 1px 1px rgba(255,255,255,.75);
-			}
+			    
+            };
 
 /* TWEET */
 .tweet {
@@ -146,7 +150,10 @@ body {
 	border-bottom: 1px solid #e8e8e8;
 	min-height: 60px;
 	border-radius: 6px;
+   
 }
+
+
 
 	.tweet .avatar {
 		float: left;
@@ -168,17 +175,23 @@ body {
 
 	.tweet-actions {
 		text-align: right;
-	}
-		.tweet-actions ul {
-			list-style-type: none;
-		}
+        visibility: hidden;
+    }
+    
+    .tweet-actions ul {
+        list-style-type: none;
+    }
+	
+            
+		
 			.tweet-actions li {
-				display: inline-block;
+                display: inline-block;
 				font-size: 12px;
 				color: #2FC2EF;
 				cursor: pointer;
 				margin-right: 2px;
-			}
+             }
+            
 
 	.icon {
 		color: #2FC2EF;
@@ -209,11 +222,16 @@ body {
 	}
 
 	.stats {
-		margin: 12px 0 12px 42px;
+        display:none;
+        margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
 	}
+       
+        }
 		.stats, .stats div {
 			box-sizing: border-box;
+           
+            
 		}
 		.num-retweets, .num-favorites {
 			font-weight: bold;
